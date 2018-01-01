@@ -14,10 +14,11 @@ app.use(cors())
 // * destructoring functions needed from mainCtrl.js..you can also put many function names in one set of {} like {myName, whatName} 
 import {myName} from "./mainCtrl"
 import {whatName} from "./mainCtrl"
+import {nickCelaya} from "./mainCtrl"
 
 app.get("/api/name", myName);
 app.post("/api/name", whatName);
-
+app.get("/api/who", nickCelaya)
 // * importing the whole file as a module and setting it to an object to use in the route object name can be anything you want
 import * as mainCtrl from "./mainCtrl"
 

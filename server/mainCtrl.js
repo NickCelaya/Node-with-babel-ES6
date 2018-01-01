@@ -21,3 +21,6 @@ let messages = [
     }
   }
   
+  export const nickCelaya = (req, res) => {
+    res.status(200).send("It worked I am Nick")
+  }

@@ -1,0 +1,6 @@
+
+// npm start not using nodemon
+ "start": "babel-node server/index.js --presets env",
+
+ // npm start using nodemon
+ "start": "nodemon server/index.js --exec babel-node"
